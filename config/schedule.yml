@@ -1,0 +1,4 @@
+scraped_data:
+  cron: "21 14 * * * Asia/Kathmandu"
+  class: "QueueDataScrapping"
+  queue: scheduled

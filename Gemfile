@@ -68,3 +68,7 @@ end
 gem 'kimurai'
 #for debugging
 gem 'pry'
+
+#background job 
+gem 'sidekiq'
+gem 'sidekiq-cron'

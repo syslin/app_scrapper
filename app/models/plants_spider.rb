@@ -8,7 +8,6 @@ class PlantsSpider < Kimurai::Base
   end
 
   def  parse(response, url: ,data: {})
-    binding.pry
     response.css('.centerColAlign').each do |plant|
       item={}
       item[:url] = url

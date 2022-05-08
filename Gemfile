@@ -64,3 +64,7 @@ group :development do
   # gem "spring"
 end
 
+#for web scrapping
+gem 'kimurai'
+#for debugging
+gem 'pry'

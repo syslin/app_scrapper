@@ -4,6 +4,7 @@ class CreatePlants < ActiveRecord::Migration[7.0]
       t.string :url
       t.string :title
       t.string :description
+      t.string :size
       t.integer :price
       t.integer :mobile_number
 

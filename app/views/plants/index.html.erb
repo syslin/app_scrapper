@@ -1,0 +1,25 @@
+
+<h1>Plants</h1>
+<%= button_to 'Scrape', scrape_plants_path %>
+<table>
+  <thead>
+  <td>Title</td>
+  <td>Size</td>
+  <td>URL</td>
+  <td>Description</td>
+  </thead>
+  <tbody>
+    <%@plants.each do |plant|%>
+      <tr>
+        <td><%= plant.title %>
+        </td>
+         <td><%= plant.size %>
+        </td>
+         <td><%= plant.url %>
+        </td>
+         <td><%= plant.description %>
+        </td>
+      </tr>
+    <%end%>
+  </tbody>
+</table>

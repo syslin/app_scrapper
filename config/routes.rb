@@ -4,7 +4,9 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
 
-  resources :plants
+  resources :plants do 
+    match '/scrape', to: 'plants#scrape', via: :post, on: :collection
+  end
 
   root to: 'plants#index'
 end
